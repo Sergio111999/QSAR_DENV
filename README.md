@@ -20,30 +20,30 @@ This repository contains the complete computational pipeline for QSAR (Quantitat
 If you use this code or data, please cite:
 
 ```
-[Your citation will be added here once published]
+[citation will be added here once published]
 ```
 
 ## Repository Structure
 
 ```
 QSAR-DENV/
-├── README.md                          # This file
-├── requirements.txt                   # Python dependencies
-├── environment.yml                    # Conda environment 
-├── LICENSE                           # MIT License
-├── scripts/                          # Main analysis pipeline
+├── README.md                          
+├── requirements.txt                   
+├── environment.yml                   
+├── LICENSE                           
+├── scripts/                          
 │   ├── 01_exploratory_data_analysis.py
 │   ├── 02_chemical_diversity_analysis.py
 │   ├── 03_data_preparation_baseline_models.py
 │   ├── 04_advanced_model_optimization.py
 │   └── 05_qsar_prediction_tool.py
-├── data/                            # Example data
+├── data/                            
 │   └── example_compounds.csv
-├── models/                          # Trained models (download separately)
+├── models/                          
 │   └── README.md
-├── notebooks/                       # Jupyter notebooks
+├── notebooks/                       
 │   └── example_usage.ipynb
-└── docs/                           # Additional documentation
+└── docs/                           
     └── user_guide.md
 ```
 
@@ -58,12 +58,8 @@ QSAR-DENV/
 
 ```bash
 # Clone the repository
-git clone https://github.com/[YOUR-USERNAME]/QSAR-DENV.git
+git clone https://github.com/Sergio111999/QSAR-DENV.git
 cd QSAR-DENV
-
-# Create virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -73,7 +69,7 @@ pip install -r requirements.txt
 
 ```bash
 # Clone the repository
-git clone https://github.com/[YOUR-USERNAME]/QSAR-DENV.git
+git clone https://github.com/Sergio111999/QSAR-DENV.git
 cd QSAR-DENV
 
 # Create conda environment
@@ -180,10 +176,6 @@ print(f"Predicted anti-dengue activity: {predictions[0]:.3f}")
 The final optimized XGBoost model achieved:
 
 - **MCC**: 0.583
-- **Accuracy**: [To be added]
-- **Precision**: [To be added]
-- **Recall**: [To be added]
-- **AUC-ROC**: [To be added]
 
 Performance was evaluated using 5-fold cross-validation on a balanced dataset.
 
@@ -192,8 +184,8 @@ Performance was evaluated using 5-fold cross-validation on a balanced dataset.
 ### Virtual Screening Results
 
 - **Total compounds screened**: 3,267
-- **High-activity predictions** (>0.7): [Number]
-- **High drug-likeness** (QED >0.5): [Number]
+- **High-activity predictions** (>0.7): 276
+- **High drug-likeness** (QED >0.5): 20
 - **Top priority candidates**: 14 novel compounds
 
 ### Top Identified Compounds
@@ -219,27 +211,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
 
-For questions or collaborations:
-
-- **Sergio Montenegro**: samontenegro@icesi.edu.co
-- **Alejandra Jerez** (Corresponding Author): amjerez@icesi.edu.co
-
-**Institution**: Universidad Icesi, Cali, Colombia  
-**Department**: Ciencias Básicas Médicas, Facultad de Ciencias de la Salud
-
-## Acknowledgments
-
-- ChEMBL database for bioactivity data
-- Colombian ethnobotanical knowledge sources
-- Universidad Icesi for computational resources
-
-## Related Publications
-
-- [Main manuscript citation will be added here]
-- Supplementary materials: [Link to supplementary materials]
-
----
-
-**Note**: This repository contains the computational pipeline. For complete datasets, trained models, and detailed results, please refer to the supplementary materials of the associated publication.
