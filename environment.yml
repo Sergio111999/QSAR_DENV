@@ -1,22 +1,78 @@
 name: qsar-denv
 channels:
   - conda-forge
+  - pytorch
   - defaults
 dependencies:
-  - python=3.9
-  - numpy>=1.23.0
-  - pandas>=1.5.0
-  - scipy>=1.9.0
-  - rdkit>=2022.09.1
-  - scikit-learn>=1.1.0
-  - xgboost>=1.7.0
-  - lightgbm>=3.3.0
-  - matplotlib>=3.6.0
-  - seaborn>=0.12.0
-  - jupyter>=1.0.0
+  # Python
+  - python=3.12.3
+  
+  # Core Scientific Computing
+  - numpy=1.26.4
+  - pandas=2.3.0
+  - scipy=1.13.1
+  
+  # Cheminformatics
+  - rdkit=2024.03.5
+  
+  # Machine Learning
+  - scikit-learn=1.3.2
+  - imbalanced-learn=0.12.3
+  
+  # Deep Learning (PyTorch)
+  - pytorch=2.5.1
+  - torchvision=0.20.1
+  - torchaudio=2.5.1
+  - cpuonly=2.0
+  
+  # Visualization
+  - matplotlib=3.9.2
+  - seaborn=0.13.2
+  - plotly=5.24.1
+  - bokeh=3.6.0
+  
+  # Data Analysis
+  - statsmodels=0.14.2
+  - scikit-image=0.24.0
+  - umap-learn=0.5.7
+  
+  # SHAP for interpretability
+  - shap=0.48.0
+  
+  # Jupyter
+  - jupyter=1.0.0
+  - jupyterlab=4.2.5
+  - notebook=7.2.2
+  
+  # Utilities
+  - tqdm=4.66.5
+  - joblib=1.4.2
+  - pyyaml=6.0.1
+  
+  # File Handling
+  - openpyxl=3.1.5
+  - h5py=3.13.0
+  - pytables=3.9.2
+  
+  # Chemistry
+  - biopython=1.85
+  
+  # NLP
+  - nltk=3.9.1
+  
+  # Development
+  - pytest=7.4.4
+  - black=24.8.0
+  
+  # pip packages (not available in conda)
   - pip
   - pip:
-    - imbalanced-learn>=0.10.0
-    - optuna>=3.0.0
-    - mordred>=1.2.0
-    - plotly>=5.11.0
+    - xgboost==3.0.2
+    - lightgbm==4.6.0
+    - catboost==1.2.7
+    - optuna==4.4.0
+    - mordred==1.2.0
+    - pubchempy==1.0.4
+    - torch-geometric==2.6.1
+    - networkx==2.8.8
+    - streamlit==1.37.1
